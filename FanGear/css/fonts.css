@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'adineuePRO-Black';
+    src: url('../fonts/');
+    src: url('../fonts/?#iefix') format('embedded-opentype'),
+    url('../fonts/adineuePRO-Black.woff') format('woff'),
+    url('../fonts/adineuePRO-Black.otf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+    }
