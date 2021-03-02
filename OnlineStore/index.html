@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="index.html" class="menu__link">Shop</a></li>
+              <li class="menu__item"><a href="index.html" class="menu__link">Testing Kits</a></li>
+              <li class="menu__item"><a href="index.html" class="menu__link">Contact Us</a></li>
+            </ul>
+          </nav>
+          <a href="index.html" class="logo">
+            <img src="img/icon/sch_logo.svg" alt="logo" class="logo__img">
+          </a>
+          <div class="header__box">
+            <div class="header__box-adress">
+              <p>24/7 Support</p>
+              <a class="header__box-phone price" href="tel:8449261541">844.926.1541</a>
+            </div><!--  /header_adress -->
+            <ul class="user-list">
+              <li class="user-list_item">
+                <a href="#" class="user-list_link">
+                  <img src="img/icon/heart.svg" alt="">
+                </a>
+              </li>
+              <li class="user-list_item">
+                <a href="#" class="user-list_link">
+                  <img src="img/icon/user.svg" alt="">
+                </a>
+              </li>
+              <li class="user-list_item">
+                <a href="#" class="user-list_link basket">
+                  <img src="img/icon/basket.svg" alt="">
+                  <p class="basket__num">0</p>
+
+                </a>
+              </li>
+            </ul>
+          </div><!--  /header__box -->
+        </div><!--  /header__top-inner -->
+      </div>
+    </div> <!-- /header__top -->
+    <div class="header__bottom">
+      <div class="container">
+        <ul class="menu-categories">
+          <li class="menu-categories__item"><a href="garment.html" class="menu-categories__link">
+              Safety Garments</a></li>
+          <li class="menu-categories__item"><a href="#" class="menu-categories__link">
+              Face & Head Protection</a></li>
+          <li class="menu-categories__item"><a href="#" class="menu-categories__link">
+              Cleaning Supplies</a></li>
+          <li class="menu-categories__item"><a href="#" class="menu-categories__link">
+              Gloves</a></li>
+          <li class="menu-categories__item"><a href="#" class="menu-categories__link">
+              Social Distancing</a></li>
+          <li class="menu-categories__item"><a href="#" class="menu-categories__link">
+              Thermal Kiosks</a></li>
+        </ul>
+      </div>
+    </div><!--  /header__bottom -->
+  </header>
+
+  <section class="banner-section page-section">
+    <div class="container">
+      <div class="banner-section__inner">
+        <div class="banner-section__slider">
+          <a class="banner-section__slider-item" href="#">
+            <img src="img/bann/bann-1.jpg" alt="1">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="img/bann/bann-2.jpg" alt="2">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="img/bann/bann-3.jpg" alt="3">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="img/bann/bann-4.jpg" alt="4">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="img/bann/bann-5.jpg" alt="5">
+          </a>
+        </div><!-- /banner-section__slider -->
+        <a class="banner-section__item sale-item" href="#">
+          <div class="sale-item__top">
+            <p class="sale-item__info">2 weeks only</p>
+            <div class="sale-item__price price">
+              <div class="sale-item__price-new">$89.99</div>
+              <div class="sale-item__price-old">$115.67</div>
+            </div><!-- /sale-item__price -->
+          </div><!--  /sale-item__top -->
+          <img class="sale-item__img" src="img/bann/kiosk.jpg" alt=k"">
+          <h5 class="sale-item__title">Tabletop <br> Temperature Kiosk</h5>
+          <div class="sale-item__footer">
+            Promo Offer Expires <br> <span>02.12.2021</span>
+          </div>
+        </a><!-- /banner-section__item -->
+      </div><!-- /banner-section__inner -->
+    </div><!-- /container -->
+  </section><!--  /banner-section -->
+  <div class="search page-section">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__tabs">
+          <a href="#tab-1" class="tab search__tabs-item tab--active">by category</a>
+          <a href="#tab-2" class="tab search__tabs-item">by age</a>
+          <a href="#tab-3" class="tab search__tabs-item">by size</a>
+          <a href="#tab-4" class="tab search__tabs-item">by price</a>
+        </div><!--  / search__tabs -->
+        <div class="search__content">
+          <div id="tab-1" class="tabs-content search__content-item tabs-content--active">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="input category">
+              <button class="search__content-btn" type="submit">search</button>
+            </form>
+          </div><!--  /search__content-item-1 -->
+          <div id="tab-2" class="tabs-content search__content-item">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="input age">
+              <button class="search__content-btn" type="submit">search</button>
+            </form>
+          </div><!--  /search__content-item-2 -->
+          <div id="tab-3" class="tabs-content search__content-item">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="input size">
+              <button class="search__content-btn" type="submit">search</button>
+            </form>
+          </div><!--  /search__content-item-3 -->
+          <div id="tab-4" class="tabs-content search__content-item">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="input price">
+              <button class="search__content-btn" type="submit">search</button>
+            </form>
+          </div><!--  /search__content-item-4 -->
+        </div><!--  / search__content -->
+      </div><!--  / search__inner -->
+    </div><!--  / container -->
+  </div><!--  /search page-section -->
+  <section class="categories">
+    <div class="container">
+      <div class="categories__inner">
+        <a class="categories__item" href="garment.html">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Safety Garments</h4>
+            <p class="categories__item-text">See More</p>
+          </div>
+          <div class="categories__item-img">
+            <img src="img/category/category-1.png" alt="c-1">
+          </div>
+        </a><!--  /categories_item -->
+        <a class="categories__item" href="mask.html">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Face Masks</h4>
+            <p class="categories__item-text">See More</p>
+          </div>
+          <div class="categories__item-img">
+            <img src="img/category/category-2.png" alt="c-2">
+          </div>
+        </a><!--  /categories_item -->
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Face Shields</h4>
+            <p class="categories__item-text">See More</p>
+          </div>
+          <div class="categories__item-img">
+            <img src="img/category/category-3.png" alt="c-3">
+          </div>
+        </a><!--  /categories__item -->
+        <a class="categories__item" href="mask.html">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Kids Masks</h4>
+            <p class="categories__item-text">See More</p>
+          </div>
+          <div class="categories__item-img">
+            <img src="img/category/category-4.png" alt="c-4">
+          </div>
+        </a><!--  /categories_item -->
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Distancing Products</h4>
+            <p class="categories__item-text">See More</p>
+          </div>
+          <div class="categories__item-img">
+            <img src="img/category/category-5.png" alt="c-5">
+          </div>
+        </a><!--  /categories_item -->
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Temperature Kiosks</h4>
+            <p class="categories__item-text">See More</p>
+          </div>
+          <div class="categories__item-img">
+            <img src="img/category/category-6.png" alt="c-6">
+          </div>
+        </a><!--  /categories_item -->
+      </div><!--  /categories__inner -->
+    </div><!-- /container -->
+  </section><!--  /categories -->
+
+  <section class="products">
+    <div class="container">
+      <div class="products__inner">
+        <h3 class="products__title">Best Sellers</h3>
+        <div class="tabs-wrapper">
+          <div class="tabs products__tabs">
+            <a class="tab products__tab tab--active" href="#product-tab-1">Safety Garments</a>
+            <a class="tab products__tab" href="#product-tab-2">Face Masks</a>
+            <a class="tab products__tab" href="#product-tab-3">Shields</a>
+            <a class="tab products__tab" href="#product-tab-4">Kids Masks</a>
+            <a class="tab products__tab" href="#product-tab-5">Gloves</a>
+            <a class="tab products__tab" href="#product-tab-6">Custom Masks</a>
+
+          </div><!--  /tab producs__tab tab--active-->
+          <div class="tabs-container products__container">
+            <div id="product-tab-1" class="tabs-content products__content tabs-content--active">
+              <div class="product-slider">
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-1.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$34.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-2.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$35.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-3.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$34.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-4.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$34.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-5.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$34.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-6.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$34.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-7.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$34.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-8.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$34.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+              </div><!-- /product-slider -->
+            </div><!--  /tabs-content producs__content tabs-content--active -->
+            <div id="product-tab-2" class="tabs-content products__content">
+              <div class="product-slider">
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-3.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$24.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="garment.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-4.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$35.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-3.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask </h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-4.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-5.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$40.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-6.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-7.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$31.59</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-3.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask </h4>
+                      <p class="product-item_price price">$42.29</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+              </div><!-- /product-slider -->
+            </div><!--  /tabs-content producs__content -->
+            <div id="product-tab-3" class="tabs-content products__content">SLIDER #3</div>
+            <div id="product-tab-4" class="tabs-content products__content">SLIDER #4</div>
+            <div id="product-tab-5" class="tabs-content products__content">SLIDER #5</div>
+            <div id="product-tab-6" class="tabs-content products__content">SLIDER #6</div>
+          </div><!--  /tabs-content producs__content -->
+        </div><!--  /tabs-container producs__container -->
+      </div><!--  / tabs-wrapper -->
+      <div class="product__more">
+        <a class="product__item-more" href="">show all items</a>
+      </div>
+    </div><!--  /products__inner -->
+    </div><!--  /products__inner -->
+  </section>
+  <div class="banner">
+    <div class="container">
+      <a class="banner-link" href="#" class="banner">
+        <img src="img/bann/btm_banner.jpg" alt="b"> </a>
+    </div>
+  </div>
+  <section class="products">
+    <div class="container">
+      <div class="products__inner">
+        <h3 class="products__title">Customers also bought these items</h3>
+        <div class="tabs-wrapper">
+          <div class="tabs products__tabs">
+            <a class="tab products__tab tab--active" href="#popular-tab-1">Face Masks</a>
+            <a class="tab products__tab" href="#popular-tab-2">Safety Garments</a>
+            <a class="tab products__tab" href="#popular-tab-3">Shields</a>
+            <a class="tab products__tab" href="#popular-tab-4">Goggles</a>
+            <a class="tab products__tab" href="#popular-tab-5">Gloves</a>
+            <a class="tab products__tab" href="#popular-tab-6">Custom Masks</a>
+
+          </div><!--  /tab producs__tab tab--active-->
+          <div class="tabs-container products__container">
+            <div id="popular-tab-1" class="tabs-content products__content tabs-content--active">
+              <div class="product-slider">
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-1.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$24.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-2.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$35.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-3.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask </h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-4.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-5.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$40.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="#">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-6.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-7.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+                      <p class="product-item_price price">$31.59</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/masks/mask-3.png" alt="img">
+                      <h4 class="product-item__title">Reusable Sublimated Mask </h4>
+                      <p class="product-item_price price">$42.29</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+              </div><!-- /product-slider -->
+            </div><!--  /tabs-content producs__content tabs-content--active -->
+
+
+            <div id="popular-tab-2" class="tabs-content products__content">
+              <div class="product-slider">
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-1.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$24.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="mask.html">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/garment/garm-6.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$35.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-2.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-3.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-4.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$40.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="#">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-6.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$45.99</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item" href="#">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-7.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$31.59</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket"></button>
+                    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">see product</p>
+                      <img class="product-item__img" src="img/products/garment/garm-5.png" alt="img">
+                      <h4 class="product-item__title">Reusable Waterproof Gown</h4>
+                      <p class="product-item_price price">$42.29</p>
+                      <p class="product-item_notify-text">Out of Stock</p>
+                    </a>
+                  </div><!-- /product-item__wrapper -->
+                </div><!--  /product-slider__item -->
+              </div><!-- /product-slider -->
+            </div><!--  /tabs-content producs__content -->
+            <div id="popular-tab-3" class="tabs-content products__content">SLIDER #3</div>
+            <div id="popular-tab-4" class="tabs-content products__content">SLIDER #4</div>
+            <div id="popular-tab-5" class="tabs-content products__content">SLIDER #5</div>
+            <div id="popular-tab-6" class="tabs-content products__content">SLIDER #6</div>
+          </div><!--  /tabs-content producs__content -->
+        </div><!--  /tabs-container producs__container -->
+      </div><!--  / tabs-wrapper -->
+
+    </div><!--  /products__inner -->
+    </div><!--  /products__inner -->
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__top-inner">
+          <div class="footer__top-item footer__top-newsletter">
+            <h6 class="footer__top-title letter">Subscribe to get special offers, free giveaways, and once-in-a-lifetime
+              deals</h6>
+            <form action="" class="footer-form">
+              <input class="footer-form__input" type="text" placeholder="input e-mail">
+              <button class="footer-form__btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">ABOUT US</h6>
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#">Reviews</a></li>
+              <li class="footer-list__item"><a href="#">Safe Shopping</a></li>
+              <li class="footer-list__item"><a href="#">Privacy Policy</a></li>
+              <li class="footer-list__item"><a href="#">Brand Validate</a></li>
+              <li class="footer-list__item"><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">CUSTOMER SERVICE</h6>
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#">Returns</a></li>
+              <li class="footer-list__item"><a href="#">FAQs</a></li>
+              <li class="footer-list__item"><a href="#">Gift Cards</a></li>
+              <li class="footer-list__item"><a href="#">Blog</a></li>
+              <li class="footer-list__item"><a href="#">Shipping & Delivery</a></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <ul class="social-list">
+              <li class="social-list__item"><a href="#">
+                  <img src="img/icon/instagram_icon.svg" alt=""></a>
+              </li>
+              <li class="social-list__item"><a href="#">
+                  <img src="img/icon/youtube_icon.svg" alt=""></a>
+              </li>
+              <li class="social-list__item"><a href="#">
+                  <img src="img/icon/vk_icon.svg" alt=""></a>
+              </li>
+              <li class="social-list__item"><a href="#">
+                  <img src="img/icon/facebook_icon.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div><!--  / footer__top-inner -->
+      </div>
+      <div class="footer__bottom">
+        <a class="footer__bottom-link" href="">We will get back to you ASAP</a>
+        <a class="footer__bottom-link" href="">© 2021 Safety Health Supplies</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="product-slider__item">
+  <div class="product-item__wrapper product-item__not-available">
+    <button class="product-item__favorite"></button>
+    <button class="product-item__basket"></button>   
+    <a class="product-item_notify-link" href="#"><span>Notify me when available</span></a>
+    <a class="product-item product-item--sale" href="#">
+      <p class="product-item__hover-text">see product</p>
+      <img class="product-item__img" src="img/products/masks/mask-1.png" alt="img">
+      <h4 class="product-item__title">Reusable Sublimated Mask</h4>
+      <p class="product-item_price price">$45.99</p>
+      <p class="product-item_notify-text">Out of Stock</p>
+    </a>
+  </div><!-- /product-item__wrapper -->
+</div><!--  /product-slider__item -->

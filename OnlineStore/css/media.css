@@ -1,0 +1,9 @@
+@media (max-width:960px){
+    .menu__item:nth-child(3n) {
+        padding-left: 1rem;    
+}
+    .menu__item:nth-child(2n) {
+        padding-left: 1rem;    
+    }
+    .user-list {
+        margin: 1rem 0 0 1rem;

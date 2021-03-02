@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"$accent: #5da68b;\n$text: #343a40;\n$light: #6c757d;\n$basic: #F0F0F4;\n\n* {\n  *:before {}\n  *:after {\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0; } }\n"
+	],
+	"names": [],
+	"mappings": ";AAKA,AAEE,CAFD,CAEC,CAAC,AAAA,MAAM,CAAC;EACN,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG"
+}
