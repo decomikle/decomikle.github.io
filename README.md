@@ -1,2 +1,2 @@
-# decomikle.github.io
-fangear
+# Mikhail
+FanGear web site design
